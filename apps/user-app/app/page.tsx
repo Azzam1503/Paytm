@@ -1,6 +1,10 @@
-import { PrismaClient } from "@repo/db/client";
-const client = new PrismaClient();
+
 
 export default function(){
 
+    return (
+        <div>
+           <h1>Root page</h1>
+        </div>
+    )
 }
