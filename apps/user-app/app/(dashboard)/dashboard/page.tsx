@@ -1,5 +1,6 @@
-export default function(){
+
+export default function() {
     return <div>
-        hi
+        Dashboard Page (or transfer/txn page)
     </div>
 }
