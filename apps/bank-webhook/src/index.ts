@@ -53,5 +53,5 @@ app.post("/bank", async (req, res) =>{
 })
 
 app.listen(3001, () => {
-    console.log("Server is running on 3001")
+    console.log("Server is running on 3003")
 })

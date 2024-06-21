@@ -39,5 +39,14 @@ export async function p2pTransfer(to: string, amount: number) {
             where: { userId: toUser.id },
             data: { amount: { increment: amount } },
           });
+
+          await tx.p2pTransfer.create({
+            data:{
+                fromUserId: Number(from),
+                toUserId: Number(toUser.id),
+                amount,
+                timestamp: new Date()
+            }
+          })
     });
 }
