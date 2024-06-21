@@ -12,6 +12,8 @@ async function getBalance() {
             userId: Number(session?.user?.id)
         }
     });
+
+    console.log(session);
     return {
         amount: balance?.amount || 0,
         locked: balance?.locked || 0
